@@ -23,9 +23,9 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
 # start the bot
 print("Starting...")
 try:
-    apiid = config("APP_ID", cast=int)
-    apihash = config("API_HASH")
-    bottoken = config("BOT_TOKEN")
+    apiid = config(1650105, cast=int)
+    apihash = config("67d1d3fae5e650d2737f000ca31be6ca")
+    bottoken = config("1241555024:AAFy1AqYUkMsChSkniBM3JmvmTMaGtBC7x4")
     frm = config("FROM_CHANNEL", cast=int)
     tochnl = config("TO_CHANNEL", cast=int)
     datgbot = TelegramClient('bot', apiid, apihash).start(bot_token=bottoken)
